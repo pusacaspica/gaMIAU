@@ -12,11 +12,8 @@ var last_container = null
 var last_pos = Vector2()
  
 func _ready():
-	pickup_item("CardTest")
-	pickup_item("CardTest")
-	pickup_item("CardTest")
-	pickup_item("CardTest")
-	pickup_item("CardTest")
+	pickup_item("Mature Apple")
+
 	pass
    
  

@@ -23,7 +23,7 @@ func insert_item(inserted_item : TextureRect):
  
 func grab_item(pos):
 	var item_held = get_item_under_pos(pos)
-	print(item)
+	#print(item)
 	if item == null:
 		return null
 	
