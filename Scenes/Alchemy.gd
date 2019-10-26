@@ -73,7 +73,8 @@ func _on_Button_Type2_pressed():
 
 func _on_Button_Mix_pressed():
 	var slot_types : Array
-	for card in slots:
-		slot_types.append(slots[card]["Type"])
-		slot_types.sort()
-	print(_match_recipe(slot_types))
+	if slots.size() == slots_amount:
+		for card in slots:
+			slot_types.append(slots[card]["Type"])
+			slot_types.sort()
+		print(_match_recipe(slot_types))
