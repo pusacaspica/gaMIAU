@@ -1,2 +1,4 @@
 # gaMIAU
  Jogo do time MIAU para a GAMETHON SEMP TCL 2019
+ 
+ TEMA: O JOGO É A SOMA DAS PARTES
