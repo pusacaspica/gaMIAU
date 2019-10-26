@@ -11,5 +11,12 @@
         "Name" : "Luck Potion",
         "Color" : "Yellow",
         "Ingredients" : ["Earth", "Water"]
+    },
+
+    "test_potion" : 
+    {
+        "Name" : "Test Potion",
+        "Color" : "Grey",
+        "Ingredients" : ["1", "2"]
     }
 }

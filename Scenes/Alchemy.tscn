@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/Alchemy.gd" type="Script" id=1]
+
+[node name="Alchemy" type="Node"]
+script = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 195.678
+margin_top = 694.19
+margin_right = 255.678
+margin_bottom = 714.19
+rect_scale = Vector2( 12.2095, 11.5221 )
+text = "Mistura"
