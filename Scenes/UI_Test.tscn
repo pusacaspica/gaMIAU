@@ -6,11 +6,85 @@
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
-margin_left = 540.0
-margin_top = 1232.0
-margin_right = 580.0
-margin_bottom = 1272.0
-grow_horizontal = 2
-alignment = 1
+[node name="Panel" type="Panel" parent="."]
+margin_top = 1056.0
+margin_right = 1080.0
+margin_bottom = 1920.0
+
+[node name="Inventario" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="Inventario"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 13.0
+margin_top = 1100.0
+margin_right = 199.0
+margin_bottom = 1436.0
+
+[node name="Panel8" type="Panel" parent="Inventario"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 13.0
+margin_top = 1496.0
+margin_right = 199.0
+margin_bottom = 1832.0
+
+[node name="Panel2" type="Panel" parent="Inventario"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 230.0
+margin_top = 1100.0
+margin_right = 416.0
+margin_bottom = 1436.0
+
+[node name="Panel7" type="Panel" parent="Inventario"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 230.0
+margin_top = 1496.0
+margin_right = 416.0
+margin_bottom = 1832.0
+
+[node name="Panel3" type="Panel" parent="Inventario"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 447.0
+margin_top = 1100.0
+margin_right = 633.0
+margin_bottom = 1436.0
+
+[node name="Panel10" type="Panel" parent="Inventario"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 447.0
+margin_top = 1496.0
+margin_right = 633.0
+margin_bottom = 1832.0
+
+[node name="Panel4" type="Panel" parent="Inventario"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 664.0
+margin_top = 1100.0
+margin_right = 850.0
+margin_bottom = 1436.0
+
+[node name="Panel6" type="Panel" parent="Inventario"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 664.0
+margin_top = 1496.0
+margin_right = 850.0
+margin_bottom = 1832.0
+
+[node name="Panel5" type="Panel" parent="Inventario"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 881.0
+margin_top = 1100.0
+margin_right = 1067.0
+margin_bottom = 1436.0
+
+[node name="Panel9" type="Panel" parent="Inventario"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 881.0
+margin_top = 1496.0
+margin_right = 1067.0
+margin_bottom = 1832.0
