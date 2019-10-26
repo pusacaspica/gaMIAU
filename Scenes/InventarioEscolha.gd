@@ -16,13 +16,7 @@ func _ready():
    
  
 func _process(delta):
-    var cursor_pos = get_global_mouse_position()
-    if Input.is_action_just_pressed("inv_grab"):
-        grab(cursor_pos)
-    if Input.is_action_just_released("inv_grab"):
-        release(cursor_pos)
-    if item_held != null:
-        item_held.rect_global_position = cursor_pos + item_offset
+	pass
  
 func grab(cursor_pos):
 	var c = get_container_under_cursor(cursor_pos)
@@ -46,12 +40,12 @@ func pickup_item(item_id):
 	var item = CardBase.instance()
 	item.set_meta("id", item_id)
 	item.texture = load(CardsDB.Cards[item_id]["Art"])
-	add_child(item)
 	var inserted = false
 	for slot in slots:
 		if !inserted:
 			if slot.insert_item(item):
 				inserted = true
-       # item.queue_free()
-       # return false
+				add_child(item)
+			
+       		
     return true
