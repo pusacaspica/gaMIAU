@@ -26,7 +26,7 @@ func _input(event):
 							slots_full = false 
 					if !slots_full:
 						child.modulate = Color(1, 1, 1, 0)
-						remove_child(child)
+						#remove_child(child)
 						print("hi")
 						get_node("../..").pickup_item(child.card_name)
 					
