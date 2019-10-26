@@ -1,0 +1,8 @@
+{
+    "ExampleCard" : {
+        "Art" : "path/to/card/art/",
+        "Flavour" : "Example Flavor Text",
+        "Title" : "Card Name",
+        "Type" : "ExampleType"
+    }
+}
