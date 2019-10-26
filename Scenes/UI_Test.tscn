@@ -12,6 +12,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+<<<<<<< HEAD
 [node name="Inventario" type="Control" parent="."]
 margin_right = 40.0
 margin_bottom = 40.0
@@ -127,3 +128,8 @@ margin_left = 323.0
 margin_top = 572.0
 margin_right = 726.0
 margin_bottom = 975.0
+=======
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+>>>>>>> crafting

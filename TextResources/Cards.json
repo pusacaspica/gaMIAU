@@ -9,7 +9,14 @@
     "CardTest" : {
         "Art" : "res://Assets/placeholders/card.png",
         "Flavour" : "Example Flavor Text",
-        "Title" : "Card Name",
-        "Type" : "ExampleType"
+        "Title" : "Test",
+        "Type" : "1"
+    },
+    
+    "CardTest2" : {
+        "Art" : "res://Assets/placeholders/card.png",
+        "Flavour" : "Example Flavor Text",
+        "Title" : "Test2",
+        "Type" : "2"
     }
 }

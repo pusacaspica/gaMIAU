@@ -1,0 +1,22 @@
+{
+    "love_potion" : 
+    {
+        "Name" : "Love Potion",
+        "Color" : "Red",
+        "Ingredients": ["Fire", "Water"] 
+    },
+
+    "luck_potion" : 
+    {
+        "Name" : "Luck Potion",
+        "Color" : "Yellow",
+        "Ingredients" : ["Earth", "Water"]
+    },
+
+    "test_potion" : 
+    {
+        "Name" : "Test Potion",
+        "Color" : "Grey",
+        "Ingredients" : ["1", "2"]
+    }
+}

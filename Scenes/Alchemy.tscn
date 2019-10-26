@@ -1,0 +1,64 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/Alchemy.gd" type="Script" id=1]
+
+[node name="Alchemy" type="Node"]
+script = ExtResource( 1 )
+
+[node name="Button_Mix" type="Button" parent="."]
+margin_left = 195.678
+margin_top = 694.19
+margin_right = 255.678
+margin_bottom = 714.19
+rect_scale = Vector2( 12.2095, 11.5221 )
+text = "Mistura"
+
+[node name="Button_Type1" type="Button" parent="."]
+margin_left = 123.896
+margin_top = 170.356
+margin_right = 177.896
+margin_bottom = 190.356
+rect_scale = Vector2( 5.30818, 7.08829 )
+text = "Type 1"
+
+[node name="Amount_Label" type="Label" parent="Button_Type1"]
+margin_left = 1.14999
+margin_top = 22.5222
+margin_right = 41.15
+margin_bottom = 36.5222
+rect_scale = Vector2( 0.573462, 0.386629 )
+text = "Quantidade: "
+
+[node name="Button_Type2" type="Button" parent="."]
+margin_left = 650.0
+margin_top = 180.0
+margin_right = 704.0
+margin_bottom = 200.0
+rect_scale = Vector2( 5.30818, 7.08829 )
+text = "Type 2"
+
+[node name="Amount_Label" type="Label" parent="Button_Type2"]
+margin_top = 23.9329
+margin_right = 40.0
+margin_bottom = 37.9329
+rect_scale = Vector2( 0.573462, 0.386629 )
+text = "Quantidade:"
+
+[node name="Result_Label" type="Label" parent="."]
+margin_left = 110.0
+margin_top = 1100.0
+margin_right = 177.0
+margin_bottom = 1114.0
+rect_scale = Vector2( 5.56, 4.0425 )
+text = "Resultado:"
+
+[node name="Slots" type="Label" parent="."]
+margin_left = 20.0
+margin_top = 560.0
+margin_right = 51.0
+margin_bottom = 574.0
+rect_scale = Vector2( 8.48, 7.12 )
+text = "Slots:"
+[connection signal="pressed" from="Button_Mix" to="." method="_on_Button_Mix_pressed"]
+[connection signal="pressed" from="Button_Type1" to="." method="_on_Button_Type1_pressed"]
+[connection signal="pressed" from="Button_Type2" to="." method="_on_Button_Type2_pressed"]
