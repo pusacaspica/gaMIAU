@@ -22,11 +22,16 @@ config/icon="res://icon.png"
 [autoload]
 
 CardsDB="*res://Scenes/CardsDB.gd"
+Config="*res://Config.gd"
 
 [display]
 
 window/size/width=1080
 window/size/height=1920
+window/size/test_width=540
+window/size/test_height=960
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
 
 [rendering]
 

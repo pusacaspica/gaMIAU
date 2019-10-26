@@ -1,6 +1,5 @@
 extends Control
 
-const CARD_ARTS_PATH = "res://Assets/Cards/"
 const CARDS_JSON_PATH = "res://TextResources/Cards.json"
 
 var Cards : Dictionary
@@ -12,3 +11,8 @@ func _ready():
 	var CardsJsonAsText = CardsJsonFile.get_as_text()
 	
 	Cards = parse_json(CardsJsonAsText)
+	
+#func get_item(item_id):
+ #     return Cards[item_id]
+ #   else:
+ #       return ITEMS["error"]

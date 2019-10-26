@@ -4,5 +4,12 @@
         "Flavour" : "Example Flavor Text",
         "Title" : "Card Name",
         "Type" : "ExampleType"
+    },
+
+    "CardTest" : {
+        "Art" : "res://Assets/placeholders/card.png",
+        "Flavour" : "Example Flavor Text",
+        "Title" : "Card Name",
+        "Type" : "ExampleType"
     }
 }
