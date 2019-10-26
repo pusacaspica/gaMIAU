@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scenes/UI_Test.gd" type="Script" id=1]
-[ext_resource path="res://Scenes/Inventario.gd" type="Script" id=2]
-[ext_resource path="res://Scenes/Panel.gd" type="Script" id=3]
+[ext_resource path="res://Scenes/Inventario.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/InventarioPrincipal.gd" type="Script" id=3]
 
 [node name="UI_Test" type="Control"]
 anchor_right = 1.0
@@ -12,115 +12,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-<<<<<<< HEAD
-[node name="Inventario" type="Control" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
-script = ExtResource( 2 )
-
-[node name="Panel11" type="Panel" parent="Inventario"]
-margin_top = 1056.0
-margin_right = 1080.0
-margin_bottom = 1920.0
-
-[node name="Panel" type="Panel" parent="Inventario" groups=[
-"InvSlot",
-]]
-modulate = Color( 0, 0, 0, 1 )
-margin_left = 13.0
-margin_top = 1100.0
-margin_right = 199.0
-margin_bottom = 1436.0
-script = ExtResource( 3 )
-
-[node name="Panel8" type="Panel" parent="Inventario" groups=[
-"InvSlot",
-]]
-modulate = Color( 0, 0, 0, 1 )
-margin_left = 13.0
-margin_top = 1496.0
-margin_right = 199.0
-margin_bottom = 1832.0
-script = ExtResource( 3 )
-
-[node name="Panel2" type="Panel" parent="Inventario" groups=[
-"InvSlot",
-]]
-modulate = Color( 0, 0, 0, 1 )
-margin_left = 230.0
-margin_top = 1100.0
-margin_right = 416.0
-margin_bottom = 1436.0
-script = ExtResource( 3 )
-
-[node name="Panel7" type="Panel" parent="Inventario" groups=[
-"InvSlot",
-]]
-modulate = Color( 0, 0, 0, 1 )
-margin_left = 230.0
-margin_top = 1496.0
-margin_right = 416.0
-margin_bottom = 1832.0
-script = ExtResource( 3 )
-
-[node name="Panel3" type="Panel" parent="Inventario" groups=[
-"InvSlot",
-]]
-modulate = Color( 0, 0, 0, 1 )
-margin_left = 447.0
-margin_top = 1100.0
-margin_right = 633.0
-margin_bottom = 1436.0
-script = ExtResource( 3 )
-
-[node name="Panel10" type="Panel" parent="Inventario" groups=[
-"InvSlot",
-]]
-modulate = Color( 0, 0, 0, 1 )
-margin_left = 447.0
-margin_top = 1496.0
-margin_right = 633.0
-margin_bottom = 1832.0
-script = ExtResource( 3 )
-
-[node name="Panel4" type="Panel" parent="Inventario" groups=[
-"InvSlot",
-]]
-modulate = Color( 0, 0, 0, 1 )
-margin_left = 664.0
-margin_top = 1100.0
-margin_right = 850.0
-margin_bottom = 1436.0
-script = ExtResource( 3 )
-
-[node name="Panel6" type="Panel" parent="Inventario" groups=[
-"InvSlot",
-]]
-modulate = Color( 0, 0, 0, 1 )
-margin_left = 664.0
-margin_top = 1496.0
-margin_right = 850.0
-margin_bottom = 1832.0
-script = ExtResource( 3 )
-
-[node name="Panel5" type="Panel" parent="Inventario" groups=[
-"InvSlot",
-]]
-modulate = Color( 0, 0, 0, 1 )
-margin_left = 881.0
-margin_top = 1100.0
-margin_right = 1067.0
-margin_bottom = 1436.0
-script = ExtResource( 3 )
-
-[node name="Panel9" type="Panel" parent="Inventario" groups=[
-"InvSlot",
-]]
-modulate = Color( 0, 0, 0, 1 )
-margin_left = 881.0
-margin_top = 1496.0
-margin_right = 1067.0
-margin_bottom = 1832.0
+[node name="Inventario" parent="." instance=ExtResource( 2 )]
 script = ExtResource( 3 )
 
 [node name="Caldeirao" type="Panel" parent="Inventario"]
@@ -128,8 +20,6 @@ margin_left = 323.0
 margin_top = 572.0
 margin_right = 726.0
 margin_bottom = 975.0
-=======
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
->>>>>>> crafting
+
+[editable path="Inventario"]
+
