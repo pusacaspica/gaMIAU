@@ -18,5 +18,37 @@
         "Flavour" : "Example Flavor Text",
         "Title" : "Test2",
         "Type" : "2"
+    },
+
+    "DiamondDust" : {
+        "Art" : "res://Assets/cards/earth/diamondust.png",
+        "Flavour" : "Example Flavor Text",
+        "Title" : "Diamond Dust",
+        "Type" : "earth"
+    },
+
+    "MatureApple" : {
+        "Art" : "res://Assets/cards/earth/matureapple.png",
+        "Flavour" : "Example Flavor Text",
+        "Title" : "Mature Apple",
+        "Type" : "earth"
+    },
+
+    "Mushroom" : {
+        "Art" : "res://Assets/cards/earth/mushroom.png",
+        "Flavour" : "Example Flavor Text",
+        "Title" : "Mushroom",
+        "Type" : "earth"
+    },
+
+    "Pumpkin" : {
+        "Art" : "res://Assets/cards/earth/pumpkin.png",
+        "Flavour" : "Example Flavor Text",
+        "Title" : "Pumpkin",
+        "Type" : "earth"
     }
+
+
+
 }
+
