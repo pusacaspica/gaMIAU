@@ -1,9 +1,5 @@
 extends Control
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-#onready var CardContainer : = $HBoxContainer
 onready var CardBase = preload("res://Scenes/CardBase.tscn")
 # Called when the node enters the scene tree for the first time.
 func _ready():
