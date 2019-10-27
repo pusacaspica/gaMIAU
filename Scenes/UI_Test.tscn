@@ -1,11 +1,30 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Scenes/UI_Test.gd" type="Script" id=1]
 [ext_resource path="res://Assets/placeholders/placeholderClient.png" type="Texture" id=2]
 [ext_resource path="res://Assets/new_dynamicfont.tres" type="DynamicFont" id=3]
 [ext_resource path="res://Scenes/Inventario.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/InventarioPrincipal.gd" type="Script" id=5]
-[ext_resource path="res://Scenes/Alchemy.gd" type="Script" id=6]
+[ext_resource path="res://Assets/cauldron.png" type="Texture" id=6]
+[ext_resource path="res://Assets/cauldron_content.png" type="Texture" id=7]
+[ext_resource path="res://Scenes/Alchemy.gd" type="Script" id=8]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Bubble"
+length = 1.1
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+}
 
 [node name="UI_Test" type="Control"]
 anchor_right = 1.0
@@ -41,18 +60,28 @@ text = "Me ve uma pocao
 feliz ai chefia"
 
 [node name="Inventario" parent="." instance=ExtResource( 4 )]
-editor/display_folded = true
 script = ExtResource( 5 )
 
-[node name="Caldeirao" type="Panel" parent="Inventario"]
-margin_left = 323.0
-margin_top = 660.0
-margin_right = 726.0
-margin_bottom = 1063.0
+[node name="Caldeirao" type="TextureRect" parent="Inventario"]
+margin_left = 247.0
+margin_top = 510.0
+margin_right = 840.0
+margin_bottom = 1103.0
+texture = ExtResource( 6 )
+expand = true
+
+[node name="Sprite" type="Sprite" parent="Inventario/Caldeirao"]
+position = Vector2( 297.5, 286.5 )
+scale = Vector2( 8.01562, 8.01562 )
+texture = ExtResource( 7 )
+hframes = 11
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Inventario/Caldeirao"]
+autoplay = "Bubble"
+anims/Bubble = SubResource( 1 )
 
 [node name="Alchemy" type="Node" parent="."]
-editor/display_folded = true
-script = ExtResource( 6 )
+script = ExtResource( 8 )
 
 [node name="Button_Mix" type="Button" parent="Alchemy"]
 margin_left = 757.0
