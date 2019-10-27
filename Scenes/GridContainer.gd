@@ -31,7 +31,10 @@ func _input(event):
 					for slot in get_node("../..").slots:
 						if !slot.item:
 							slots_full = false 
-					if !slots_full:
+					if slots_full:
+						if get_node("../..").stack_item(child.card_name):
+							child.modulate = Color(1, 1, 1, 0)
+					else:
 						child.modulate = Color(1, 1, 1, 0)
 						#remove_child(child)
 					#	print("hi")
