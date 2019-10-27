@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/diamondust.png-e81cb436a9bf69604ac46b546a35f0e1.stex"
+path="res://.import/liquid.png-2c0fd44d9be999c34318cf4f87278423.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/cards/earth/diamondust.png"
-dest_files=[ "res://.import/diamondust.png-e81cb436a9bf69604ac46b546a35f0e1.stex" ]
+source_file="res://Assets/potion/liquid.png"
+dest_files=[ "res://.import/liquid.png-2c0fd44d9be999c34318cf4f87278423.stex" ]
 
 [params]
 
