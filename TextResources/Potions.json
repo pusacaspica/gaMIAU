@@ -69,10 +69,10 @@
         "Ingredients" : ["life", "earth"]
     },
 
-    "test_potion" : 
+    "gibberish" : 
     {
-        "Name" : "Test Potion",
-        "Color" : "Grey",
-        "Ingredients" : ["1", "2"]
+        "Name" : "Unknow",
+        "Color" : "Gray",
+        "Ingredients" : []
     }
 }

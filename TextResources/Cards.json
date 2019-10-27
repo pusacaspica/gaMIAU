@@ -3,6 +3,8 @@
     "Diamond Dust" : {
         "Art" : "res://Assets/cards/earth/diamondust.png",
         "Flavour" : "Example Flavor Text",
+        "Rarity" : "medium",
+        "Taste" : "-3",
         "Title" : "Diamond Dust",
         "Type" : "earth"
     },
@@ -10,6 +12,8 @@
     "Mature Apple" : {
         "Art" : "res://Assets/cards/earth/matureapple.png",
         "Flavour" : "Example Flavor Text",
+        "Rarity" : "low",
+        "Taste" : "8",
         "Title" : "Mature Apple",
         "Type" : "earth"
     },
@@ -17,6 +21,8 @@
     "Mushroom" : {
         "Art" : "res://Assets/cards/earth/mushroom.png",
         "Flavour" : "Example Flavor Text",
+        "Rarity" : "low",
+        "Taste" : "7",
         "Title" : "Mushroom",
         "Type" : "earth"
     },
@@ -24,13 +30,26 @@
     "Pumpkin" : {
         "Art" : "res://Assets/cards/earth/pumpkin.png",
         "Flavour" : "Example Flavor Text",
-        "Title" : "Pumpkin",
+        "Rarity" : "medium",
+        "Taste" : "5",
+        "Title" : "Dancing Pumpkin",
+        "Type" : "earth"
+    },
+
+    "Happy Leaf" : {
+        "Art" : "res://Assests/cards/earth/",
+        "Flavour" : "Example Flavour Text",
+        "Rarity" : "high",
+        "Taste" : "4",
+        "Title" : "Folha da Árvore da Felicidade", 
         "Type" : "earth"
     },
 
     "Flaming Apple" : {
         "Art" : "res://Assets/cards/fire/flamingapple.png",
         "Flavour" : "Example Flavor Text",
+        "Rarity" : "medium",
+        "Taste" : "-4",
         "Title" : "Flaming Apple",
         "Type" : "fire"
     },
@@ -38,55 +57,90 @@
     "Kerosene" : {
         "Art" : "res://Assets/cards/fire/kerosene.png",
         "Flavour" : "Example Flavor Text",
+        "Rarity" : "low",
         "Title" : "Kerosene",
+        "Taste" : "-8",
+        "Title" : "Flaming Apple",
         "Type" : "fire"
     },
 
     "Pepper" : {
         "Art" : "res://Assets/cards/fire/pepper.png",
         "Flavour" : "Example Flavor Text",
+        "Rarity" : "low",
         "Title" : "Pepper",
+        "Taste" : "-2",
         "Type" : "fire"
     },
     
     "Phoenix" : {
         "Art" : "res://Assets/cards/fire/phoenix.png",
         "Flavour" : "Example Flavor Text",
+        "Rarity" : "high",
         "Title" : "Phoenix",
+        "Taste" : "-2",
+        "Type" : "fire"
+    },
+
+    "Fire Cricket" : {
+        "Art" : "res://Assets/cards/earth/cricket.png",
+        "Flavour" : "Example Flavour Text",
+        "Rarity" : "medium",
+        "Title" : "Fire Cricket",
+        "Taste" : "-5",
         "Type" : "fire"
     },
 
     "Apple" : {
         "Art" : "res://Assets/cards/life/apple.png",
         "Flavour" : "Example Flavor Text",
+        "Rarity" : "medium",  
         "Title" : "Apple",
+        "Taste" : "5",
         "Type" : "life"
     },
 
     "Boric Acid" : {
         "Art" : "res://Assets/cards/life/boricacid.png",
         "Flavour" : "Example Flavor Text",
+        "Rarity" : "low",
         "Title" : "Boric Acid",
+        "Taste" : "-3",
         "Type" : "life"
     },
 
     "Clover" : {
         "Art" : "res://Assets/cards/life/clover.png",
         "Flavour" : "Example Flavor Text",
+        "Rarity" : "medium",
         "Title" : "Clover",
+        "Taste" : "2",
         "Type" : "life"
     },
 
     "Peacock" : {
         "Art" : "res://Assets/cards/life/peacock.png",
         "Flavour" : "Example Flavor Text",
+        "Rarity" : "low",
         "Title" : "Peacock",
+        "Taste" : "-2",
+        "Type" : "life"
+    },
+
+    "Aquavitae" : {
+        "Art" : "res://Assets/cards/life/lifewater.png",
+        "Flavour" : "Example Flavour Text",
+        "Rarity" : "high",
+        "Title" : "Água da Vida",
+        "Taste" : "0",
         "Type" : "life"
     },
 
     "Distilled Water" : {
         "Art" : "res://Assets/cards/neutral/distilledwater.png",
         "Flavour" : "Example Flavor Text",
+        "Rarity" : "low",
+        "Taste" : "0",
         "Title" : "Distilled Water",
         "Type" : "neutral"
     },
@@ -94,6 +148,8 @@
     "Lemon" : {
         "Art" : "res://Assets/cards/neutral/lemon.png",
         "Flavour" : "Example Flavor Text",
+        "Rarity" : "medium", 
+        "Taste" : "7",
         "Title" : "Lemon",
         "Type" : "neutral"
     },
@@ -101,6 +157,8 @@
     "Mascavo" : {
         "Art" : "res://Assets/cards/neutral/mascavo.png",
         "Flavour" : "Example Flavor Text",
+        "Rarity" : "medium",
+        "Taste" : "6",
         "Title" : "Mascavo",
         "Type" : "neutral"
     },
@@ -108,6 +166,8 @@
     "Pink Salt" : {
         "Art" : "res://Assets/cards/neutral/pinksalt.png",
         "Flavour" : "Example Flavor Text",
+        "Rarity" : "high",
+        "Taste" : "8",
         "Title" : "Pink Salt",
         "Type" : "neutral"
     },
@@ -115,9 +175,12 @@
     "Spearmint" : {
         "Art" : "res://Assets/cards/neutral/spearmint.png",
         "Flavour" : "Example Flavor Text",
+        "Rarity" : "high",
+        "Taste" : "8",
         "Title" : "Spearmint",
         "Type" : "neutral"
     }
 
+    
 }
 
