@@ -1,7 +1,7 @@
 extends Node
 
 var Level1 = [
-	{ "Potion" : "courage_potion", "Fala" : "Blablabla1" },
-	{ "Potion" : "love_potion", "Fala" : "Blablabla2" },
-	{ "Potion" : "intelligence_potion", "Fala" : "Blablabla3" }
+	{ "Potion" : "courage_potion", "Fala" : "Eu gostaria de uma pocão de Coragem" },
+	{ "Potion" : "love_potion", "Fala" : "Eu gostaria de uma pocão do Amor" },
+	{ "Potion" : "intelligence_potion", "Fala" : "Eu gostaria de uma pocão de Inteligência" }
 ]

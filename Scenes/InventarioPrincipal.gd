@@ -12,6 +12,8 @@ var item_offset = Vector2()
 var last_container = null
 var last_pos = Vector2()
  
+var no_caldeirao = 0
+
 func _ready():
 	#for card in CurrentInvent.inventory:
 	for i in range(0, CurrentInvent.inventory.size()):
@@ -48,13 +50,16 @@ func release(cursor_pos):
 		return
 	
 	if Caldeirao.get_global_rect().has_point(cursor_pos):
-		if get_node("../Alchemy").slots.size() >= 4:
+		if no_caldeirao >= 4:
 			return_item()
-		elif item_held.amount > 1:
-			item_held.amount -= 1
-			return_item()
-		else: 
-			drop_item()
+		else:
+			if item_held.amount > 1:
+				item_held.amount -= 1
+				no_caldeirao +=1
+				return_item()
+			else:
+				drop_item()
+				no_caldeirao +=1
 			
 	else:
 		return_item()
@@ -95,3 +100,8 @@ func pickup_item(item_id):
        # item.queue_free()
        # return false
     return item
+
+func _on_Button_Mix_pressed():
+	if no_caldeirao >= 4:
+		no_caldeirao = 0
+	pass # Replace with function body.

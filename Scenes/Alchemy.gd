@@ -13,6 +13,8 @@ var recipes : Dictionary
 var result : Array
 var taste
 
+signal potion_brewed
+
 func _ready():
 	_set_recipes()
 
@@ -69,8 +71,8 @@ func _on_Button_Mix_pressed():
 				slot_types.append(slots[card]["Type"])
 				slot_types.sort()
 				print(slot_types)
-		result.append(_match_recipe(slot_types) + )
-		print(_match_recipe(slot_types))
+		result.append(_match_recipe(slot_types)) # + )
+		emit_signal("potion_brewed", _match_recipe(slot_types))
 		_clear_slots()
 		slot_types.clear()
 
