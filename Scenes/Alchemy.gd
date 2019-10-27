@@ -27,11 +27,12 @@ func _set_recipes():
 
 
 func add_to_slots(id):
+	print(id)
 	if slots.size() < slots_amount:
-		var current_card = id
-		var current_card_type = current_card.get("Type")
-		slots[id] = cards[id]
-	pass
+	#	var current_card = id
+	#	var current_card_type = current_card.get("Type")
+	#	slots[id] = cards[id]
+		pass
 
 func _match_recipe(slots):
 	var is_current_recipe : bool

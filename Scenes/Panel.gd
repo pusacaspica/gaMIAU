@@ -41,9 +41,10 @@ func pos_to_grid_coord(pos):
  
  
 func get_item_under_pos(pos):
-	if item.get_global_rect().has_point(pos):
-		return item
-	return null
+	if item:
+		if item.get_global_rect().has_point(pos):
+			return item
+		return null
  
 func insert_item_at_first_available_spot(item):
     for y in range(grid_height):
