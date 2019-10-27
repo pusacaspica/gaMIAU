@@ -1,23 +1,36 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scenes/DeckSelection.gd" type="Script" id=1]
-[ext_resource path="res://Scenes/Inventario.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Scenes/InventarioEscolha.gd" type="Script" id=3]
-[ext_resource path="res://Scenes/GridContainer.gd" type="Script" id=4]
+[ext_resource path="res://Assets/background/container.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/Inventario.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/InventarioEscolha.gd" type="Script" id=4]
+[ext_resource path="res://Scenes/GridContainer.gd" type="Script" id=5]
 
 [node name="Deck Slection" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="Inventario" parent="." instance=ExtResource( 2 )]
-script = ExtResource( 3 )
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 1080.0
+margin_bottom = 832.0
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Inventario" parent="." instance=ExtResource( 3 )]
+script = ExtResource( 4 )
 
 [node name="ScrollContainer" type="ScrollContainer" parent="Inventario"]
-margin_left = 40.0
-margin_top = 66.0
-margin_right = 1107.0
-margin_bottom = 748.0
+margin_left = 31.0
+margin_top = 61.0
+margin_right = 1098.0
+margin_bottom = 790.0
 scroll_horizontal_enabled = false
 __meta__ = {
 "_edit_group_": true
@@ -27,10 +40,10 @@ __meta__ = {
 margin_right = 188.0
 margin_bottom = 336.0
 rect_min_size = Vector2( 188, 336 )
-custom_constants/vseparation = 10
-custom_constants/hseparation = 10
+custom_constants/vseparation = 40
+custom_constants/hseparation = 22
 columns = 5
-script = ExtResource( 4 )
+script = ExtResource( 5 )
 
 [node name="Button" type="Button" parent="."]
 margin_left = 416.0
@@ -38,6 +51,9 @@ margin_top = 946.0
 margin_right = 664.0
 margin_bottom = 1034.0
 text = "CONFIRMA"
+__meta__ = {
+"_edit_lock_": true
+}
 [connection signal="pressed" from="Button" to="Inventario" method="_on_Button_pressed"]
 
 [editable path="Inventario"]
