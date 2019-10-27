@@ -29,8 +29,8 @@ PotionsDB="*res://Scenes/PotionsDB.gd"
 
 window/size/width=1080
 window/size/height=1920
-window/size/test_width=216
-window/size/test_height=384
+window/size/test_width=864
+window/size/test_height=1536
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
 

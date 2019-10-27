@@ -1,22 +1,34 @@
 {
-    "ExampleCard" : {
-        "Art" : "path/to/card/art/",
+
+    "Diamond Dust" : {
+        "Art" : "res://Assets/cards/earth/diamondust.png",
         "Flavour" : "Example Flavor Text",
-        "Title" : "Card Name",
-        "Type" : "ExampleType"
+        "Title" : "Diamond Dust",
+        "Type" : "earth"
     },
 
-    "CardTest" : {
-        "Art" : "res://Assets/placeholders/card.png",
+    "Mature Apple" : {
+        "Art" : "res://Assets/cards/earth/matureapple.png",
         "Flavour" : "Example Flavor Text",
-        "Title" : "Test",
-        "Type" : "1"
+        "Title" : "Mature Apple",
+        "Type" : "earth"
     },
-    
-    "CardTest2" : {
-        "Art" : "res://Assets/placeholders/card.png",
+
+    "Mushroom" : {
+        "Art" : "res://Assets/cards/earth/mushroom.png",
         "Flavour" : "Example Flavor Text",
-        "Title" : "Test2",
-        "Type" : "2"
+        "Title" : "Mushroom",
+        "Type" : "earth"
+    },
+
+    "Pumpkin" : {
+        "Art" : "res://Assets/cards/earth/pumpkin.png",
+        "Flavour" : "Example Flavor Text",
+        "Title" : "Pumpkin",
+        "Type" : "earth"
     }
+
+
+
 }
+

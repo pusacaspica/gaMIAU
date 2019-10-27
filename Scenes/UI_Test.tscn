@@ -1,12 +1,24 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scenes/UI_Test.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Inventario.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/InventarioPrincipal.gd" type="Script" id=3]
 
 [node name="UI_Test" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
+[node name="Inventario" parent="." instance=ExtResource( 2 )]
+script = ExtResource( 3 )
+
+[node name="Caldeirao" type="Panel" parent="Inventario"]
+margin_left = 323.0
+margin_top = 572.0
+margin_right = 726.0
+margin_bottom = 975.0
+
+[editable path="Inventario"]
