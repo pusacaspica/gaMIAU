@@ -14,7 +14,6 @@ func _ready():
 		add_child(new_card)
 		new_card.card_name = CardsDB.Cards[card]["Title"]
 	#	print(new_card.card_name)
-		
 	for card in CardsDB.Cards:
 		var new_card = CardBase.instance()
 		new_card.texture = load(CardsDB.Cards[card]["Art"])
@@ -22,12 +21,6 @@ func _ready():
 		new_card.card_name = CardsDB.Cards[card]["Title"]
 	#	print(new_card.card_name)
 		
-	for card in CardsDB.Cards:
-		var new_card = CardBase.instance()
-		new_card.texture = load(CardsDB.Cards[card]["Art"])
-		add_child(new_card)
-		new_card.card_name = CardsDB.Cards[card]["Title"]
-	#	print(new_card.card_name)
 
 func _input(event):
 	if Input.is_action_just_pressed("inv_grab"):
