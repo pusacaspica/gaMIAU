@@ -26,8 +26,12 @@ func _on_Alchemy_potion_brewed(potion):
 func _enter_client():
 	Clients.remove(Clients.bsearch(current_client))
 	if !Clients.empty():
-		randi()
+		randomize()
 		current_client = Clients[randi() % Clients.size()]
 		ClientDialog.text = current_client["Fala"]
 	else:
 		get_tree().change_scene("res://Scenes/DeckSelection.tscn")
+
+
+func _on_Button_Mix_pressed():
+	pass # Replace with function body.

@@ -61,7 +61,7 @@ func release(cursor_pos):
 			else:
 				drop_item()
 				no_caldeirao +=1
-			
+		
 	else:
 		return_item()
 	

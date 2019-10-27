@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Scenes/DeckSelection.gd" type="Script" id=1]
 [ext_resource path="res://Assets/background/container.png" type="Texture" id=2]
@@ -6,6 +6,8 @@
 [ext_resource path="res://Scenes/InventarioEscolha.gd" type="Script" id=4]
 [ext_resource path="res://Scenes/GridContainer.gd" type="Script" id=5]
 [ext_resource path="res://Assets/background/genericbutton.png" type="Texture" id=6]
+
+[sub_resource type="NoiseTexture" id=1]
 
 [node name="Deck Slection" type="Control"]
 anchor_right = 1.0
@@ -15,9 +17,16 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = -80.0
+margin_right = 1191.0
+margin_bottom = 2190.0
+texture = SubResource( 1 )
+expand = true
+
 [node name="container" type="Sprite" parent="."]
-position = Vector2( 522.43, 404.388 )
-scale = Vector2( 3.0012, 3.57373 )
+position = Vector2( 541.91, 417.05 )
+scale = Vector2( 3.15017, 3.69097 )
 texture = ExtResource( 2 )
 
 [node name="Inventario" parent="." instance=ExtResource( 3 )]
@@ -44,10 +53,10 @@ columns = 5
 script = ExtResource( 5 )
 
 [node name="Button" type="TextureButton" parent="."]
-margin_left = 392.911
-margin_top = 788.994
-margin_right = 640.911
-margin_bottom = 876.994
+margin_left = 422.131
+margin_top = 849.383
+margin_right = 670.131
+margin_bottom = 937.383
 texture_normal = ExtResource( 6 )
 expand = true
 [connection signal="pressed" from="Button" to="Inventario" method="_on_Button_pressed"]
