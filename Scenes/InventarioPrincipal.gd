@@ -31,11 +31,11 @@ func _process(delta):
  
 func grab(cursor_pos):
 	var c = get_container_under_cursor(cursor_pos)
-	print(c)
+#	print(c)
 	if c != null and c.has_method("grab_item"):
 		item_held = c.grab_item(cursor_pos)
 		if item_held != null:
-			print("haaa")
+			#print("haaa")
 			last_container = c
 			last_pos = item_held.rect_global_position
 			item_offset = item_held.rect_global_position - cursor_pos
