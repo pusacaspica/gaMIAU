@@ -91,3 +91,11 @@ func _on_Button_pressed():
 	#	print(CurrentInvent.inventory)
 		get_tree().change_scene("res://Scenes/UI_Test.tscn")
 		pass # Replace with function body.
+
+func stack_item(item_id):
+	for slot in slots:
+		if slot.item != null:
+			if slot.item.card_name == CardsDB.Cards[item_id]["Title"]:
+				slot.item.amount += 1
+				return true
+	return false
