@@ -6,6 +6,7 @@ onready var slots = get_tree().get_nodes_in_group("InvSlot")
  
 onready var Caldeirao : = $Caldeirao
 
+signal card_dropped 
 var item_held = null
 var item_offset = Vector2()
 var last_container = null
@@ -59,8 +60,10 @@ func get_container_under_cursor(cursor_pos):
 	
  
 func drop_item():
-    item_held.queue_free()
-    item_held = null
+	emit_signal("card_dropped", item_held.card_name)
+	item_held.queue_free()
+	item_held = null
+	
  
 func return_item():
     item_held.rect_global_position = last_pos

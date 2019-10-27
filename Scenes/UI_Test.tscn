@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scenes/UI_Test.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Inventario.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/InventarioPrincipal.gd" type="Script" id=3]
+[ext_resource path="res://Scenes/Alchemy.gd" type="Script" id=4]
 
 [node name="UI_Test" type="Control"]
 anchor_right = 1.0
@@ -20,5 +21,18 @@ margin_left = 323.0
 margin_top = 572.0
 margin_right = 726.0
 margin_bottom = 975.0
+
+[node name="Alchemy" type="Node" parent="."]
+script = ExtResource( 4 )
+
+[node name="Button_Mix" type="Button" parent="Alchemy"]
+margin_left = 763.902
+margin_top = 716.901
+margin_right = 775.902
+margin_bottom = 736.901
+rect_scale = Vector2( 6.93294, 6.20822 )
+text = "MIX"
+[connection signal="card_dropped" from="Inventario" to="Alchemy" method="_on_Inventario_card_dropped"]
+[connection signal="pressed" from="Alchemy/Button_Mix" to="Alchemy" method="_on_Button_Mix_pressed"]
 
 [editable path="Inventario"]
