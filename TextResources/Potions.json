@@ -72,7 +72,7 @@
     "test_potion" : 
     {
         "Name" : "Test Potion",
-        "Color" : "Grey",
+        "Color" : "Gray",
         "Ingredients" : ["1", "2"]
     }
 }

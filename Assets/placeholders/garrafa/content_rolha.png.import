@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bottle.png-e004209e17e68d383caa335241915640.stex"
+path="res://.import/content_rolha.png-3a167dc1ff884e31aef4d507690d5c44.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/potion/bottle.png"
-dest_files=[ "res://.import/bottle.png-e004209e17e68d383caa335241915640.stex" ]
+source_file="res://Assets/placeholders/garrafa/content_rolha.png"
+dest_files=[ "res://.import/content_rolha.png-3a167dc1ff884e31aef4d507690d5c44.stex" ]
 
 [params]
 

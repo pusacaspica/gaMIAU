@@ -1,20 +1,58 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Assets/potion/bottle.png" type="Texture" id=1]
-[ext_resource path="res://Assets/potion/liquid.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/PotionUI.gd" type="Script" id=1]
+[ext_resource path="res://Assets/placeholders/garrafa/content_rolha.png" type="Texture" id=2]
+[ext_resource path="res://Assets/placeholders/garrafa/shade.png" type="Texture" id=3]
+[ext_resource path="res://Assets/placeholders/garrafa/shape.png" type="Texture" id=4]
 
-[node name="Potion" type="Control"]
+[sub_resource type="Animation" id=1]
+resource_name = "rainbow"
+length = 1.6
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("LiquidTexture:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 0, 0, 1 ), Color( 1, 0.470588, 0, 1 ), Color( 1, 1, 0, 1 ), Color( 0, 1, 0, 1 ), Color( 0, 1, 1, 1 ), Color( 0, 0, 1, 1 ), Color( 0.72549, 0, 1, 1 ), Color( 1, 0, 1, 1 ), Color( 1, 0, 0, 1 ) ]
+}
+
+[node name="PotionUI" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-
-[node name="BottleTexture" type="TextureRect" parent="."]
-margin_right = 32.0
-margin_bottom = 56.0
-texture = ExtResource( 1 )
-expand = true
+margin_right = -1016.0
+margin_bottom = -1856.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="LiquidTexture" type="TextureRect" parent="."]
-margin_right = 32.0
-margin_bottom = 56.0
+margin_right = 64.0
+margin_bottom = 64.0
 texture = ExtResource( 2 )
 expand = true
+stretch_mode = 6
+
+[node name="ShadeTexture" type="TextureRect" parent="."]
+margin_right = 64.0
+margin_bottom = 64.0
+hint_tooltip = "Poção foda"
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 6
+
+[node name="BottleTexture" type="TextureRect" parent="."]
+margin_right = 64.0
+margin_bottom = 64.0
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 6
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/rainbow = SubResource( 1 )
