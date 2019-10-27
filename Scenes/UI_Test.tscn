@@ -94,7 +94,7 @@ rect_scale = Vector2( 6.93294, 6.20822 )
 text = "MIX"
 [connection signal="card_dropped" from="Inventario" to="Alchemy" method="_on_Inventario_card_dropped"]
 [connection signal="potion_brewed" from="Alchemy" to="." method="_on_Alchemy_potion_brewed"]
-[connection signal="pressed" from="Alchemy/Button_Mix" to="Inventario" method="_on_Button_Mix_pressed"]
 [connection signal="pressed" from="Alchemy/Button_Mix" to="Alchemy" method="_on_Button_Mix_pressed"]
+[connection signal="pressed" from="Alchemy/Button_Mix" to="Inventario" method="_on_Button_Mix_pressed"]
 
 [editable path="Inventario"]
