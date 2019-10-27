@@ -7,10 +7,11 @@ onready var inventory = $"../Inventario"
 onready var deck = get_tree().get_nodes_in_group("Card")
 
 var slots : Dictionary
+var ingredients: Dictionary
 var slots_amount = 4
 var recipes : Dictionary
-
-
+var result : Array
+var taste
 
 func _ready():
 	_set_recipes()
@@ -31,33 +32,47 @@ func add_to_slots(id):
 	if slots.size() < slots_amount:
 	#	var current_card = id
 	#	var current_card_type = current_card.get("Type")
+		if(cards[id]["Type"] != "neutral"):
+			ingredients[id] = cards[id]
+			#taste += cards[id]["Flavour"]
+			print(ingredients[id])
+		#else:
+		#	taste += cards[id]["Flavour"]
 		slots[id] = cards[id]
-		print(slots[id])
-		pass
+		
 
-func _match_recipe(slots):
+func _clear_slots():
+	slots.clear()
+	ingredients.clear()
+
+func _match_recipe(ingredients):
 	var is_current_recipe : bool
 	for recipe in recipes:
 		is_current_recipe = true
 		if is_current_recipe:
 			for ingredient in recipes[recipe]:
-				if !slots.has(ingredient):
+				if !ingredients.has(ingredient):
 					is_current_recipe = false
 		
 			if is_current_recipe:
 				return recipe
-				
-	return null
+	
+	return "gibberish"
 
 
 func _on_Button_Mix_pressed():
+	print(slots.size())
 	var slot_types : Array
 	if slots.size() == slots_amount:
 		for card in slots:
-			slot_types.append(slots[card]["Type"])
-			slot_types.sort()
-		if _match_recipe(slot_types):
-			get_tree().get_nodes_in_group("LabelTop")[0].text = "Muito obrigado. Top demais!"
+			if(cards[card]["Type"] != "neutral"):
+				slot_types.append(slots[card]["Type"])
+				slot_types.sort()
+				print(slot_types)
+		result.append(_match_recipe(slot_types) + )
+		print(_match_recipe(slot_types))
+		_clear_slots()
+		slot_types.clear()
 
 
 func _on_Inventario_card_dropped(card_name):
