@@ -2,6 +2,8 @@
 
 [ext_resource path="res://Scenes/Panel.gd" type="Script" id=1]
 
+
+
 [node name="Inventario" type="Control"]
 margin_right = 40.0
 margin_bottom = 40.0

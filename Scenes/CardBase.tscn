@@ -3,6 +3,8 @@
 [ext_resource path="res://Scenes/CardBase.gd" type="Script" id=1]
 [ext_resource path="res://Assets/new_dynamicfont.tres" type="DynamicFont" id=2]
 
+
+
 [node name="CardBase" type="TextureRect" groups=[
 "Card",
 ]]
