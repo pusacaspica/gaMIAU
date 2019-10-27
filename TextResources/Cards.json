@@ -60,7 +60,7 @@
         "Rarity" : "low",
         "Title" : "Kerosene",
         "Taste" : "-8",
-        "Title" : "Flaming Apple",
+        "Title" : "Kerosene",
         "Type" : "fire"
     },
 
@@ -82,14 +82,15 @@
         "Type" : "fire"
     },
 
-    "Fire Cricket" : {
-        "Art" : "res://Assets/cards/earth/cricket.png",
+    "Vulcanic Rock" : {
+        "Art" : "res://Assets/cards/fire/vulcanicrock.png",
         "Flavour" : "Example Flavour Text",
         "Rarity" : "medium",
-        "Title" : "Fire Cricket",
+        "Title" : "Vulcanic Rock",
         "Taste" : "-5",
         "Type" : "fire"
     },
+
 
     "Apple" : {
         "Art" : "res://Assets/cards/life/apple.png",
@@ -179,8 +180,52 @@
         "Taste" : "8",
         "Title" : "Spearmint",
         "Type" : "neutral"
-    }
+    },
 
+    "Bottled Storm" : {
+        "Art" : "res://Assets/cards/wind/bottledstorm.png",
+        "Flavour" : "Example Flavor Text",
+        "Rarity" : "high",
+        "Taste" : "8",
+        "Title" : "Bottled Storm",
+        "Type" : "air"
+    },
+
+    "Fairy Dust" : {
+        "Art" : "res://Assets/cards/wind/fairydust.png",
+        "Flavour" : "Example Flavor Text",
+        "Rarity" : "high",
+        "Taste" : "8",
+        "Title" : "Fairy Dust",
+        "Type" : "air"
+    },
+
+    "Honey" : {
+        "Art" : "res://Assets/cards/wind/honey.png",
+        "Flavour" : "Example Flavor Text",
+        "Rarity" : "high",
+        "Taste" : "8",
+        "Title" : "Honey",
+        "Type" : "air"
+    },
+    
+    "Unicorn" : {
+        "Art" : "res://Assets/cards/wind/unicorn.png",
+        "Flavour" : "Example Flavor Text",
+        "Rarity" : "high",
+        "Taste" : "8",
+        "Title" : "Unicorn",
+        "Type" : "air"
+    },
+
+    "Flying Apple" : {
+        "Art" : "res://Assets/cards/wind/flyingapple.png",
+        "Flavour" : "Example Flavor Text",
+        "Rarity" : "high",
+        "Taste" : "8",
+        "Title" : "Flying Apple",
+        "Type" : "air"
+    },
     
 }
 

@@ -69,7 +69,7 @@ func _on_Button_Mix_pressed():
 				slot_types.append(slots[card]["Type"])
 				slot_types.sort()
 				print(slot_types)
-		result.append(_match_recipe(slot_types) + )
+		result.append(_match_recipe(slot_types))
 		print(_match_recipe(slot_types))
 		_clear_slots()
 		slot_types.clear()
