@@ -30,8 +30,7 @@ func add_to_slots(id):
 	if slots.size() < slots_amount:
 		var current_card = id
 		var current_card_type = current_card.get("Type")
-		
-		
+		slots[id] = cards[id]
 	pass
 
 func _match_recipe(slots):

@@ -13,6 +13,7 @@ var last_container = null
 var last_pos = Vector2()
  
 func _ready():
+
 	pass
    
  
@@ -83,6 +84,8 @@ func _on_Button_pressed():
 			slots_full = false
 	if slots_full:
 		for slot in slots:
-			CurrentInvent.inventory.append(slot.item)
-			get_tree().change_scene("")
+			CurrentInvent.inventory.append(slot.item.card_name)
+		
+	#	print(CurrentInvent.inventory)
+		get_tree().change_scene("res://Scenes/UI_Test.tscn")
 		pass # Replace with function body.
