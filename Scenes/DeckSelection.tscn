@@ -15,9 +15,9 @@ script = ExtResource( 3 )
 
 [node name="ScrollContainer" type="ScrollContainer" parent="Inventario"]
 margin_left = 40.0
-margin_top = 22.0
+margin_top = 66.0
 margin_right = 1107.0
-margin_bottom = 1044.0
+margin_bottom = 748.0
 scroll_horizontal_enabled = false
 __meta__ = {
 "_edit_group_": true
