@@ -50,14 +50,23 @@ func get_container_under_cursor(cursor_pos):
 	return null
 
 func pickup_item(item_id):
-	var item = CardBase.instance()
-	item.set_meta("id", item_id)
-	item.texture = load(CardsDB.Cards[item_id]["Art"])
+	var already_there = false
+	for slot in slots:
+		if slot.item != null:
+			if slot.item.card_name == CardsDB.Cards[item_id]["Title"]:
+				slot.item.amount += 1
+				already_there = true
+		
 	var inserted = false
 	for slot in slots:
-		if !inserted:
+		if !inserted and !slot.item and !already_there:
+			var item = CardBase.instance()
+			item.set_meta("id", item_id)
+			item.texture = load(CardsDB.Cards[item_id]["Art"])
 			if slot.insert_item(item):
 				inserted = true
+				item.card_name = CardsDB.Cards[item_id]["Title"]
+				slot.item.amount += 1
 				add_child(item)
 			
        		
@@ -66,3 +75,12 @@ func pickup_item(item_id):
 func drop_item():
     item_held.queue_free()
     item_held = null
+
+func _on_Button_pressed():
+	var slots_full = true
+	for slot in slots:
+		if !slot.item:
+			slots_full = false
+	if slots_full:
+		
+		pass # Replace with function body.

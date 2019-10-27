@@ -32,4 +32,12 @@ custom_constants/hseparation = 10
 columns = 5
 script = ExtResource( 4 )
 
+[node name="Button" type="Button" parent="."]
+margin_left = 416.0
+margin_top = 946.0
+margin_right = 664.0
+margin_bottom = 1034.0
+text = "CONFIRMA"
+[connection signal="pressed" from="Button" to="Inventario" method="_on_Button_pressed"]
+
 [editable path="Inventario"]
