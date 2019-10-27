@@ -32,16 +32,16 @@
         "Flavour" : "Example Flavor Text",
         "Rarity" : "medium",
         "Taste" : "5",
-        "Title" : "Dancing Pumpkin",
+        "Title" : "Pumpkin",
         "Type" : "earth"
     },
 
     "Happy Leaf" : {
-        "Art" : "res://Assests/cards/earth/",
+        "Art" : "res://Assets/cards/earth/happytree.png",
         "Flavour" : "Example Flavour Text",
         "Rarity" : "high",
         "Taste" : "4",
-        "Title" : "Folha da Árvore da Felicidade", 
+        "Title" : "Happy Leaf", 
         "Type" : "earth"
     },
 
@@ -131,7 +131,7 @@
         "Art" : "res://Assets/cards/life/lifewater.png",
         "Flavour" : "Example Flavour Text",
         "Rarity" : "high",
-        "Title" : "Água da Vida",
+        "Title" : "Aquavitae",
         "Taste" : "0",
         "Type" : "life"
     },
