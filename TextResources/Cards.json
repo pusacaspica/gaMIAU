@@ -82,8 +82,42 @@
         "Flavour" : "Example Flavor Text",
         "Title" : "Peacock",
         "Type" : "life"
-    }
+    },
 
+    "Distilled Water" : {
+        "Art" : "res://Assets/cards/neutral/distilledwater.png",
+        "Flavour" : "Example Flavor Text",
+        "Title" : "Distilled Water",
+        "Type" : "neutral"
+    },
+
+    "Lemon" : {
+        "Art" : "res://Assets/cards/neutral/lemon.png",
+        "Flavour" : "Example Flavor Text",
+        "Title" : "Lemon",
+        "Type" : "neutral"
+    },
+
+    "Mascavo" : {
+        "Art" : "res://Assets/cards/neutral/mascavo.png",
+        "Flavour" : "Example Flavor Text",
+        "Title" : "Mascavo",
+        "Type" : "neutral"
+    },
+
+    "Pink Salt" : {
+        "Art" : "res://Assets/cards/neutral/pinksalt.png",
+        "Flavour" : "Example Flavor Text",
+        "Title" : "Pink Salt",
+        "Type" : "neutral"
+    },
+
+    "Spearmint" : {
+        "Art" : "res://Assets/cards/neutral/spearmint.png",
+        "Flavour" : "Example Flavor Text",
+        "Title" : "Spearment",
+        "Type" : "neutral"
+    }
 
 }
 
