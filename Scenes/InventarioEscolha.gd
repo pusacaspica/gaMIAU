@@ -82,5 +82,7 @@ func _on_Button_pressed():
 		if !slot.item:
 			slots_full = false
 	if slots_full:
-		
+		for slot in slots:
+			CurrentInvent.inventory.append(slot.item)
+			get_tree().change_scene("")
 		pass # Replace with function body.
