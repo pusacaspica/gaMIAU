@@ -48,7 +48,14 @@ func release(cursor_pos):
 		return
 	
 	if Caldeirao.get_global_rect().has_point(cursor_pos):
-		drop_item()
+		if get_node("../Alchemy").slots.size() >= 4:
+			return_item()
+		elif item_held.amount > 1:
+			item_held.amount -= 1
+			return_item()
+		else: 
+			drop_item()
+			
 	else:
 		return_item()
 	

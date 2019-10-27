@@ -56,7 +56,8 @@ func _on_Button_Mix_pressed():
 		for card in slots:
 			slot_types.append(slots[card]["Type"])
 			slot_types.sort()
-		print(_match_recipe(slot_types))
+		if _match_recipe(slot_types):
+			get_tree().get_nodes_in_group("LabelTop")[0].text = "Muito obrigado. Top demais!"
 
 
 func _on_Inventario_card_dropped(card_name):
