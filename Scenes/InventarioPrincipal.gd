@@ -13,9 +13,10 @@ var last_container = null
 var last_pos = Vector2()
  
 func _ready():
-	for card in CurrentInvent.inventory:
-		print(card)
-		pickup_item(card)
+	#for card in CurrentInvent.inventory:
+	for i in range(0, CurrentInvent.inventory.size()):
+		#print(card)
+		pickup_item(CurrentInvent.inventory[i]).amount = CurrentInvent.amounts[i]
 
 	pass
    
@@ -86,4 +87,4 @@ func pickup_item(item_id):
 				inserted = true
        # item.queue_free()
        # return false
-    return true
+    return item
