@@ -87,6 +87,7 @@ func _on_Button_pressed():
 	if slots_full:
 		for slot in slots:
 			CurrentInvent.inventory.append(slot.item.card_name)
+			CurrentInvent.amounts.append(slot.item.amount)
 		
 	#	print(CurrentInvent.inventory)
 		get_tree().change_scene("res://Scenes/UI_Test.tscn")

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/price_token.png-8c8ef43d30c0bbddc132868857996955.stex"
+path="res://.import/table.png-177b454fdc598cd5a4f023de2d4f1fe3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/cards/price_token.png"
-dest_files=[ "res://.import/price_token.png-8c8ef43d30c0bbddc132868857996955.stex" ]
+source_file="res://Assets/table.png"
+dest_files=[ "res://.import/table.png-177b454fdc598cd5a4f023de2d4f1fe3.stex" ]
 
 [params]
 

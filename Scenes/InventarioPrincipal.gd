@@ -13,9 +13,10 @@ var last_container = null
 var last_pos = Vector2()
  
 func _ready():
-	for card in CurrentInvent.inventory:
-		print(card)
-		pickup_item(card)
+	#for card in CurrentInvent.inventory:
+	for i in range(0, CurrentInvent.inventory.size()):
+		#print(card)
+		pickup_item(CurrentInvent.inventory[i]).amount = CurrentInvent.amounts[i]
 
 	pass
    
@@ -47,7 +48,14 @@ func release(cursor_pos):
 		return
 	
 	if Caldeirao.get_global_rect().has_point(cursor_pos):
-		drop_item()
+		if get_node("../Alchemy").slots.size() >= 4:
+			return_item()
+		elif item_held.amount > 1:
+			item_held.amount -= 1
+			return_item()
+		else: 
+			drop_item()
+			
 	else:
 		return_item()
 	
@@ -86,4 +94,4 @@ func pickup_item(item_id):
 				inserted = true
        # item.queue_free()
        # return false
-    return true
+    return item
