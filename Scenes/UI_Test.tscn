@@ -89,7 +89,6 @@ text = "Me ve uma pocao
 feliz ai chefia"
 
 [node name="Inventario" parent="." instance=ExtResource( 6 )]
-editor/display_folded = true
 script = ExtResource( 7 )
 
 [node name="Caldeirao" type="TextureRect" parent="Inventario"]
