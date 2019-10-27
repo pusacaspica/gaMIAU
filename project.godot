@@ -25,6 +25,7 @@ CardsDB="*res://Scenes/CardsDB.gd"
 Config="*res://Config.gd"
 PotionsDB="*res://Scenes/PotionsDB.gd"
 CurrentInvent="*res://CurrentInvent.gd"
+ClientDB="*res://ClientDB.gd"
 
 [display]
 
