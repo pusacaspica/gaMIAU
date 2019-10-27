@@ -1,16 +1,21 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Scenes/UI_Test.gd" type="Script" id=1]
-[ext_resource path="res://Assets/placeholders/placeholderClient.png" type="Texture" id=2]
-[ext_resource path="res://Assets/new_dynamicfont.tres" type="DynamicFont" id=3]
-[ext_resource path="res://Scenes/Inventario.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Scenes/InventarioPrincipal.gd" type="Script" id=5]
-[ext_resource path="res://Assets/cauldron.png" type="Texture" id=6]
-[ext_resource path="res://Assets/cauldron_content.png" type="Texture" id=7]
-[ext_resource path="res://Scenes/Alchemy.gd" type="Script" id=8]
+[ext_resource path="res://Assets/cards/price_token.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Minecraft.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Assets/placeholders/placeholderClient.png" type="Texture" id=4]
+[ext_resource path="res://Assets/new_dynamicfont.tres" type="DynamicFont" id=5]
+[ext_resource path="res://Scenes/Inventario.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/InventarioPrincipal.gd" type="Script" id=7]
+[ext_resource path="res://Assets/cauldron.png" type="Texture" id=8]
+[ext_resource path="res://Assets/cauldron_content.png" type="Texture" id=9]
+[ext_resource path="res://Scenes/Alchemy.gd" type="Script" id=10]
 
-[sub_resource type="Animation" id=1]
-resource_name = "Bubble"
+[sub_resource type="DynamicFont" id=1]
+size = 90
+font_data = ExtResource( 3 )
+
+[sub_resource type="Animation" id=2]
 length = 1.1
 loop = true
 tracks/0/type = "value"
@@ -34,13 +39,37 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="Moedas" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="Moedas"]
+margin_left = 840.0
+margin_top = 21.0
+margin_right = 933.0
+margin_bottom = 114.0
+texture = ExtResource( 2 )
+expand = true
+
+[node name="Label" type="Label" parent="Moedas"]
+margin_left = 958.0
+margin_top = 33.0
+margin_right = 1065.0
+margin_bottom = 124.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 0.913725, 0, 1 )
+text = "40"
+
 [node name="Cliente" type="TextureRect" parent="."]
 margin_left = -359.0
 margin_top = 44.0
 margin_right = 916.0
 margin_bottom = 1236.0
-texture = ExtResource( 2 )
+texture = ExtResource( 4 )
 expand = true
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Panel" type="Panel" parent="Cliente"]
 margin_left = 899.0
@@ -55,33 +84,34 @@ margin_left = 31.0
 margin_top = 44.0
 margin_right = 217.0
 margin_bottom = 132.0
-custom_fonts/font = ExtResource( 3 )
+custom_fonts/font = ExtResource( 5 )
 text = "Me ve uma pocao 
 feliz ai chefia"
 
-[node name="Inventario" parent="." instance=ExtResource( 4 )]
-script = ExtResource( 5 )
+[node name="Inventario" parent="." instance=ExtResource( 6 )]
+editor/display_folded = true
+script = ExtResource( 7 )
 
 [node name="Caldeirao" type="TextureRect" parent="Inventario"]
 margin_left = 247.0
 margin_top = 510.0
 margin_right = 840.0
 margin_bottom = 1103.0
-texture = ExtResource( 6 )
+texture = ExtResource( 8 )
 expand = true
 
 [node name="Sprite" type="Sprite" parent="Inventario/Caldeirao"]
 position = Vector2( 297.5, 286.5 )
 scale = Vector2( 8.01562, 8.01562 )
-texture = ExtResource( 7 )
+texture = ExtResource( 9 )
 hframes = 11
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Inventario/Caldeirao"]
 autoplay = "Bubble"
-anims/Bubble = SubResource( 1 )
+anims/Bubble = SubResource( 2 )
 
 [node name="Alchemy" type="Node" parent="."]
-script = ExtResource( 8 )
+script = ExtResource( 10 )
 
 [node name="Button_Mix" type="Button" parent="Alchemy"]
 margin_left = 757.0
