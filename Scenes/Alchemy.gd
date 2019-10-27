@@ -23,15 +23,16 @@ func _load_inventory():
 func _set_recipes():
 	for potion in potions:
 		recipes[potion] = potions[potion]["Ingredients"]
-	print(recipes)
+	#print(recipes)
 
 
 func add_to_slots(id):
-	print(id)
+	#print(id)
 	if slots.size() < slots_amount:
 	#	var current_card = id
 	#	var current_card_type = current_card.get("Type")
-	#	slots[id] = cards[id]
+		slots[id] = cards[id]
+		print(slots[id])
 		pass
 
 func _match_recipe(slots):

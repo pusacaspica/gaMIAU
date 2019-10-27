@@ -67,6 +67,7 @@ func pickup_item(item_id):
 			if slot.insert_item(item):
 				inserted = true
 				item.card_name = CardsDB.Cards[item_id]["Title"]
+				#print(item.card_name)
 				slot.item.amount += 1
 				add_child(item)
 			
@@ -74,6 +75,7 @@ func pickup_item(item_id):
     return true
 	
 func drop_item():
+    #print(item_held.get_meta("id"))
     item_held.queue_free()
     item_held = null
 

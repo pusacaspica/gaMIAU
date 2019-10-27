@@ -3,70 +3,70 @@
     {
         "Name" : "Love Potion",
         "Color" : "Pink",
-        "Ingredients": ["Fire", "Air"] 
+        "Ingredients": ["fire", "air"] 
     },
 
     "luck_potion" : 
     {
         "Name" : "Luck on a Bottle",
         "Color" : "Gold",
-        "Ingredients" : ["Life", "Air"]
+        "Ingredients" : ["life", "air"]
     },
 
     "happy_potion": 
     {
         "Name": "Happiness Potion",
         "Color" : "Rainbow",
-        "Ingredients" : ["Life", "Fire"]
+        "Ingredients" : ["life", "fire"]
     },
     
     "courage_potion":
     {
         "Name" : "Courage Elixir",
         "Color" : "Red", 
-        "Ingredients" : ["Fire", "Earth"]
+        "Ingredients" : ["fire", "earth"]
     },
 
     "spirits_potion" : 
     {
         "Name" : "Evil Spirit Repelent",
         "Color" : "Light Purple",
-        "Ingredients" : ["Death", "Air"]
+        "Ingredients" : ["death", "air"]
     },
 
     "beauty_potion" : 
     { 
         "Name" : "Beautifier",
         "Color" : "Purple",
-        "Ingredients" : ["Fire", "Death"]
+        "Ingredients" : ["fire", "death"]
     },
 
     "harvest_potion" : 
     {
         "Name" : "Dedos Verdes",
         "Color" : "Green", 
-        "Ingredients" : ["Earth", "Death"]
+        "Ingredients" : ["earth", "death"]
     },
 
     "intelligence_potion" : 
     {
         "Name" : "Smart Juice",
         "Color" : "Light Blue",
-        "Ingredients" : ["Earth", "Air"]
+        "Ingredients" : ["earth", "air"]
     },
 
     "youth_potion" : 
     {
         "Name" : "Young Again",
         "Color" : "Yellow",
-        "Ingredients" : ["Life", "Death"]
+        "Ingredients" : ["life", "death"]
     },
 
     "health_potion" :
     {
         "Name" : "SUS",
         "Color" : "Blue",
-        "Ingredients" : ["Life", "Earth"]
+        "Ingredients" : ["life", "earth"]
     },
 
     "test_potion" : 

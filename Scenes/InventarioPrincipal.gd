@@ -14,7 +14,7 @@ var last_pos = Vector2()
  
 func _ready():
 	for card in CurrentInvent.inventory:
-		#print(card)
+		print(card)
 		pickup_item(card)
 
 	pass
@@ -34,6 +34,7 @@ func grab(cursor_pos):
 #	print(c)
 	if c != null and c.has_method("grab_item"):
 		item_held = c.grab_item(cursor_pos)
+		print(item_held)
 		if item_held != null:
 			#print("haaa")
 			last_container = c
@@ -76,6 +77,7 @@ func pickup_item(item_id):
 	var item = CardBase.instance()
 	item.set_meta("id", item_id)
 	item.texture = load(CardsDB.Cards[item_id]["Art"])
+	item.card_name = CardsDB.Cards[item_id]["Title"]
 	add_child(item)
 	var inserted = false
 	for slot in slots:
