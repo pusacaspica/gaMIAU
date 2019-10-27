@@ -26,8 +26,63 @@
         "Flavour" : "Example Flavor Text",
         "Title" : "Pumpkin",
         "Type" : "earth"
-    }
+    },
 
+    "Flaming Apple" : {
+        "Art" : "res://Assets/cards/fire/flamingapple.png",
+        "Flavour" : "Example Flavor Text",
+        "Title" : "Flaming Apple",
+        "Type" : "fire"
+    },
+
+    "Kerosene" : {
+        "Art" : "res://Assets/cards/fire/kerosene.png",
+        "Flavour" : "Example Flavor Text",
+        "Title" : "Kerosene",
+        "Type" : "fire"
+    },
+
+    "Pepper" : {
+        "Art" : "res://Assets/cards/fire/pepper.png",
+        "Flavour" : "Example Flavor Text",
+        "Title" : "Pepper",
+        "Type" : "fire"
+    },
+    
+    "Phoenix" : {
+        "Art" : "res://Assets/cards/fire/phoenix.png",
+        "Flavour" : "Example Flavor Text",
+        "Title" : "Phoenix",
+        "Type" : "fire"
+    },
+
+    "Apple" : {
+        "Art" : "res://Assets/cards/life/apple.png",
+        "Flavour" : "Example Flavor Text",
+        "Title" : "Apple",
+        "Type" : "life"
+    },
+
+    "Boric Acid" : {
+        "Art" : "res://Assets/cards/life/boricacid.png",
+        "Flavour" : "Example Flavor Text",
+        "Title" : "Boric Acid",
+        "Type" : "life"
+    },
+
+    "Clover" : {
+        "Art" : "res://Assets/cards/life/clover.png",
+        "Flavour" : "Example Flavor Text",
+        "Title" : "Clover",
+        "Type" : "life"
+    },
+
+    "Peacock" : {
+        "Art" : "res://Assets/cards/life/peacock.png",
+        "Flavour" : "Example Flavor Text",
+        "Title" : "Peacock",
+        "Type" : "life"
+    }
 
 
 }

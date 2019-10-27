@@ -1,6 +1,6 @@
 extends Panel
 
-var item
+var item = null
  
 var grid = {}
 var cell_size = 32

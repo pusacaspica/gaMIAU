@@ -13,7 +13,14 @@ func _ready():
 		new_card.texture = load(CardsDB.Cards[card]["Art"])
 		add_child(new_card)
 		new_card.card_name = CardsDB.Cards[card]["Title"]
-		print(new_card.card_name)
+	#	print(new_card.card_name)
+	for card in CardsDB.Cards:
+		var new_card = CardBase.instance()
+		new_card.texture = load(CardsDB.Cards[card]["Art"])
+		add_child(new_card)
+		new_card.card_name = CardsDB.Cards[card]["Title"]
+	#	print(new_card.card_name)
+		
 
 func _input(event):
 	if Input.is_action_just_pressed("inv_grab"):
@@ -27,7 +34,7 @@ func _input(event):
 					if !slots_full:
 						child.modulate = Color(1, 1, 1, 0)
 						#remove_child(child)
-						print("hi")
+					#	print("hi")
 						get_node("../..").pickup_item(child.card_name)
 					
 # Called every frame. 'delta' is the elapsed time since the previous frame.
