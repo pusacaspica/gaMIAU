@@ -13,7 +13,9 @@ var last_container = null
 var last_pos = Vector2()
  
 func _ready():
-	pickup_item("Mature Apple")
+	for card in CurrentInvent.inventory:
+		#print(card)
+		pickup_item(card)
 
 	pass
    
