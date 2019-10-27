@@ -11,6 +11,9 @@
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="container" type="Sprite" parent="."]
 position = Vector2( 522.43, 404.388 )
@@ -21,10 +24,10 @@ texture = ExtResource( 2 )
 script = ExtResource( 4 )
 
 [node name="ScrollContainer" type="ScrollContainer" parent="Inventario"]
-margin_left = 40.0
-margin_top = 66.0
-margin_right = 1107.0
-margin_bottom = 748.0
+margin_left = 31.0
+margin_top = 61.0
+margin_right = 1098.0
+margin_bottom = 790.0
 scroll_horizontal_enabled = false
 __meta__ = {
 "_edit_group_": true,
@@ -35,8 +38,8 @@ __meta__ = {
 margin_right = 188.0
 margin_bottom = 336.0
 rect_min_size = Vector2( 188, 336 )
-custom_constants/vseparation = 10
-custom_constants/hseparation = 10
+custom_constants/vseparation = 40
+custom_constants/hseparation = 22
 columns = 5
 script = ExtResource( 5 )
 

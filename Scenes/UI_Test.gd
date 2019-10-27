@@ -16,4 +16,18 @@ func _process(delta):
 	$Moedas/Label.text = str(CurrentInvent.money)
 	
 
+func _on_Alchemy_potion_brewed(potion):
+	if potion == current_client["Potion"]:
+		CurrentInvent.money += 60
+	else:
+		CurrentInvent.money += 40
+	_enter_client()
 
+func _enter_client():
+	Clients.remove(Clients.bsearch(current_client))
+	if !Clients.empty():
+		randi()
+		current_client = Clients[randi() % Clients.size()]
+		ClientDialog.text = current_client["Fala"]
+	else:
+		get_tree().change_scene("res://Scenes/DeckSelection.tscn")

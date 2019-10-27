@@ -40,6 +40,7 @@ __meta__ = {
 }
 
 [node name="Moedas" type="Control" parent="."]
+editor/display_folded = true
 margin_right = 40.0
 margin_bottom = 40.0
 
@@ -61,6 +62,7 @@ custom_colors/font_color = Color( 1, 0.913725, 0, 1 )
 text = "40"
 
 [node name="Cliente" type="TextureRect" parent="."]
+editor/display_folded = true
 margin_left = -359.0
 margin_top = 44.0
 margin_right = 916.0
@@ -120,6 +122,8 @@ margin_bottom = 944.0
 rect_scale = Vector2( 6.93294, 6.20822 )
 text = "MIX"
 [connection signal="card_dropped" from="Inventario" to="Alchemy" method="_on_Inventario_card_dropped"]
+[connection signal="potion_brewed" from="Alchemy" to="." method="_on_Alchemy_potion_brewed"]
 [connection signal="pressed" from="Alchemy/Button_Mix" to="Alchemy" method="_on_Button_Mix_pressed"]
+[connection signal="pressed" from="Alchemy/Button_Mix" to="Inventario" method="_on_Button_Mix_pressed"]
 
 [editable path="Inventario"]
