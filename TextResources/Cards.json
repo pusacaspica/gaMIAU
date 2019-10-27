@@ -26,35 +26,9 @@
         "Flavour" : "Example Flavor Text",
         "Title" : "Pumpkin",
         "Type" : "earth"
-    },
-
-    "Flaming Apple" : {
-        "Art" : "res://Assets/cards/fire/flamingapple.png",
-        "Flavour" : "Example Flavor Text",
-        "Title" : "Flaming Apple",
-        "Type" : "fire"
-    },
-
-    "Kerosene" : {
-        "Art" : "res://Assets/cards/fire/kerosene.png",
-        "Flavour" : "Example Flavor Text",
-        "Title" : "Kerosene",
-        "Type" : "fire"
-    },
-
-    "Pepper" : {
-        "Art" : "res://Assets/cards/fire/pepper.png",
-        "Flavour" : "Example Flavor Text",
-        "Title" : "Pepper",
-        "Type" : "fire"
-    },
-    
-    "Phoenix" : {
-        "Art" : "res://Assets/cards/fire/phoenix.png",
-        "Flavour" : "Example Flavor Text",
-        "Title" : "Phoenix",
-        "Type" : "fire"
     }
+
+
 
 }
 
