@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/diamondust.png-e81cb436a9bf69604ac46b546a35f0e1.stex"
+path="res://.import/mascavo.png-7660ac151ec87457a23324be6fb792bf.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/cards/earth/diamondust.png"
-dest_files=[ "res://.import/diamondust.png-e81cb436a9bf69604ac46b546a35f0e1.stex" ]
+source_file="res://Assets/cards/neutral/mascavo.png"
+dest_files=[ "res://.import/mascavo.png-7660ac151ec87457a23324be6fb792bf.stex" ]
 
 [params]
 

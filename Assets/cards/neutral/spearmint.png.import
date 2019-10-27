@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/diamondust.png-e81cb436a9bf69604ac46b546a35f0e1.stex"
+path="res://.import/spearmint.png-1e685462d15b63935737f2942b0e3198.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/cards/earth/diamondust.png"
-dest_files=[ "res://.import/diamondust.png-e81cb436a9bf69604ac46b546a35f0e1.stex" ]
+source_file="res://Assets/cards/neutral/spearmint.png"
+dest_files=[ "res://.import/spearmint.png-1e685462d15b63935737f2942b0e3198.stex" ]
 
 [params]
 

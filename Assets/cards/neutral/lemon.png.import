@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/diamondust.png-e81cb436a9bf69604ac46b546a35f0e1.stex"
+path="res://.import/lemon.png-3f4e24a9948378b2bd95578738fb6c92.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/cards/earth/diamondust.png"
-dest_files=[ "res://.import/diamondust.png-e81cb436a9bf69604ac46b546a35f0e1.stex" ]
+source_file="res://Assets/cards/neutral/lemon.png"
+dest_files=[ "res://.import/lemon.png-3f4e24a9948378b2bd95578738fb6c92.stex" ]
 
 [params]
 
