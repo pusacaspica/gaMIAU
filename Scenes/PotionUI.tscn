@@ -14,7 +14,7 @@ tracks/0/path = NodePath("LiquidTexture:self_modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
-tracks/0/enabled = true
+tracks/0/enabled = false
 tracks/0/keys = {
 "times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
@@ -28,9 +28,6 @@ anchor_bottom = 1.0
 margin_right = -1016.0
 margin_bottom = -1856.0
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="LiquidTexture" type="TextureRect" parent="."]
 margin_right = 64.0

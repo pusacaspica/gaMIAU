@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Scenes/UI_Test.gd" type="Script" id=1]
 [ext_resource path="res://Assets/cards/price_token.png" type="Texture" id=2]
@@ -7,29 +7,12 @@
 [ext_resource path="res://Assets/new_dynamicfont.tres" type="DynamicFont" id=5]
 [ext_resource path="res://Scenes/Inventario.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scenes/InventarioPrincipal.gd" type="Script" id=7]
-[ext_resource path="res://Assets/cauldron.png" type="Texture" id=8]
-[ext_resource path="res://Assets/cauldron_content.png" type="Texture" id=9]
-[ext_resource path="res://Scenes/Alchemy.gd" type="Script" id=10]
+[ext_resource path="res://Scenes/Caldeirao.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/Alchemy.gd" type="Script" id=9]
 
 [sub_resource type="DynamicFont" id=1]
 size = 90
 font_data = ExtResource( 3 )
-
-[sub_resource type="Animation" id=2]
-length = 1.1
-loop = true
-tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
-}
 
 [node name="UI_Test" type="Control"]
 anchor_right = 1.0
@@ -93,26 +76,14 @@ feliz ai chefia"
 [node name="Inventario" parent="." instance=ExtResource( 6 )]
 script = ExtResource( 7 )
 
-[node name="Caldeirao" type="TextureRect" parent="Inventario"]
-margin_left = 247.0
-margin_top = 510.0
-margin_right = 840.0
-margin_bottom = 1103.0
-texture = ExtResource( 8 )
-expand = true
-
-[node name="Sprite" type="Sprite" parent="Inventario/Caldeirao"]
-position = Vector2( 297.5, 286.5 )
-scale = Vector2( 8.01562, 8.01562 )
-texture = ExtResource( 9 )
-hframes = 11
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Inventario/Caldeirao"]
-autoplay = "Bubble"
-anims/Bubble = SubResource( 2 )
+[node name="Caldeirao" parent="Inventario" instance=ExtResource( 8 )]
+margin_left = 242.295
+margin_top = 454.84
+margin_right = 770.295
+margin_bottom = 1047.84
 
 [node name="Alchemy" type="Node" parent="."]
-script = ExtResource( 10 )
+script = ExtResource( 9 )
 
 [node name="Button_Mix" type="Button" parent="Alchemy"]
 margin_left = 757.0
@@ -123,7 +94,7 @@ rect_scale = Vector2( 6.93294, 6.20822 )
 text = "MIX"
 [connection signal="card_dropped" from="Inventario" to="Alchemy" method="_on_Inventario_card_dropped"]
 [connection signal="potion_brewed" from="Alchemy" to="." method="_on_Alchemy_potion_brewed"]
-[connection signal="pressed" from="Alchemy/Button_Mix" to="Alchemy" method="_on_Button_Mix_pressed"]
 [connection signal="pressed" from="Alchemy/Button_Mix" to="Inventario" method="_on_Button_Mix_pressed"]
+[connection signal="pressed" from="Alchemy/Button_Mix" to="Alchemy" method="_on_Button_Mix_pressed"]
 
 [editable path="Inventario"]

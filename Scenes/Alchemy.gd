@@ -11,7 +11,7 @@ var ingredients: Dictionary
 var slots_amount = 4
 var recipes : Dictionary
 var result : Array
-var taste
+var taste : int = 0
 
 signal potion_brewed
 
@@ -29,15 +29,16 @@ func _set_recipes():
 	#print(recipes)
 
 
-func add_to_slots(id):	
+func add_to_slots(id):
 	if slots.size() < slots_amount:
 		
 		if(cards[id]["Type"] != "neutral"):
 			ingredients[id] = cards[id]
 			print("Added to slot " + ingredients[id]["Title"])
-		
+			
 		slots.append(cards[id]["Title"])
-
+		taste += int(cards[id]["Taste"])
+		print(taste) 
 
 func _clear_slots():
 	slots.clear()
@@ -67,7 +68,8 @@ func _on_Button_Mix_pressed():
 				slot_types.append(cards[card]["Type"])
 				slot_types.sort()
 				print(slot_types)
-		result.append(_match_recipe(slot_types)) # + )
+		result.append(_match_recipe(slot_types))
+		result.append(str(taste))
 		emit_signal("potion_brewed", _match_recipe(slot_types))
 		_clear_slots()
 		slot_types.clear()
