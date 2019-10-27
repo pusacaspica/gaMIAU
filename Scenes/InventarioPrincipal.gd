@@ -56,6 +56,7 @@ func release(cursor_pos):
 			if item_held.amount > 1:
 				item_held.amount -= 1
 				no_caldeirao +=1
+				emit_signal("card_dropped", item_held.card_name)
 				return_item()
 			else:
 				drop_item()

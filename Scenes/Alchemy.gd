@@ -6,7 +6,7 @@ onready var cards : Dictionary = CardsDB.Cards
 onready var inventory = $"../Inventario" 
 onready var deck = get_tree().get_nodes_in_group("Card")
 
-var slots : Dictionary
+var slots : Array
 var ingredients: Dictionary
 var slots_amount = 4
 var recipes : Dictionary
@@ -29,19 +29,15 @@ func _set_recipes():
 	#print(recipes)
 
 
-func add_to_slots(id):
-	#print(id)
+func add_to_slots(id):	
 	if slots.size() < slots_amount:
-	#	var current_card = id
-	#	var current_card_type = current_card.get("Type")
+		
 		if(cards[id]["Type"] != "neutral"):
 			ingredients[id] = cards[id]
-			#taste += cards[id]["Flavour"]
-			print(ingredients[id])
-		#else:
-		#	taste += cards[id]["Flavour"]
-		slots[id] = cards[id]
+			print("Added to slot " + ingredients[id]["Title"])
 		
+		slots.append(cards[id]["Title"])
+
 
 func _clear_slots():
 	slots.clear()
@@ -63,12 +59,12 @@ func _match_recipe(ingredients):
 
 
 func _on_Button_Mix_pressed():
-	print(slots.size())
+	print(slots)
 	var slot_types : Array
 	if slots.size() == slots_amount:
 		for card in slots:
 			if(cards[card]["Type"] != "neutral"):
-				slot_types.append(slots[card]["Type"])
+				slot_types.append(cards[card]["Type"])
 				slot_types.sort()
 				print(slot_types)
 		result.append(_match_recipe(slot_types)) # + )
